@@ -21,6 +21,8 @@
 
 (require 'init-conf)
 
+(require 'init-web)
+
 (provide 'init)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -29,7 +31,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (flymake-yaml yaml-mode flycheck-rust racer company-anaconda pyenv-mode anaconda-mode projectile company flycheck rainbow-delimiters golden-ratio atom-one-dark-theme))))
+    (web-mode flymake-yaml yaml-mode flycheck-rust racer company-anaconda pyenv-mode anaconda-mode projectile company flycheck rainbow-delimiters golden-ratio atom-one-dark-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
