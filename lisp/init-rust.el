@@ -28,6 +28,9 @@
              (local-set-key (kbd "C-c <tab>") #'rust-format-buffer)
              (electric-pair-mode 1)))
 
+(add-hook 'rust-mode-hook
+          '(lambda () (fci-mode 1)))
+
 ;; (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
 
 (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)

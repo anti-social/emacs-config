@@ -10,6 +10,8 @@
 (eval-after-load "company"
   '(add-to-list 'company-backends 'company-anaconda))
 
+(add-hook 'python-mode-hook
+          '(lambda () (fci-mode 1)))
 
 (defun projectile-pyenv-mode-set ()
   "Set pyenv version matching project name."

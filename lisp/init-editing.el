@@ -2,6 +2,7 @@
 (require 'saveplace)
 (require-package 'rainbow-delimiters)
 (require-package 'flycheck)
+(require-package 'fill-column-indicator)
 
 ;; Highlights matching parenthesis
 (show-paren-mode 1)
@@ -10,6 +11,11 @@
 (global-hl-line-mode 1)
 
 (setq-default indent-tabs-mode nil)
+
+(column-number-mode 1)
+
+(require 'fill-column-indicator)
+(setq fci-rule-column 80)
 
 ;; Interactive search key bindings. By default, C-s runs
 ;; isearch-forward, so this swaps the bindings.
